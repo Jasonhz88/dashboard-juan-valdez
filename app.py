@@ -1,6 +1,6 @@
-Script: app.py
-Descripción: Script de automatización de limpieza con NumPy/Pandas e interfaz interactiva.
-"""
+# Script: app.py
+# Descripción: Script de automatización de limpieza con NumPy/Pandas e interfaz interactiva.
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -78,7 +78,7 @@ if archivo_cargado is not None:
         col2.metric("Volumen de Productos", f"{unidades_vendidas:.0f} Uds")
         col3.metric("Ticket Promedio de Compra", f"${ticket_promedio:,.0f} COP")
         
-        st.markdown("---")
+        st.markdown(" quick_reply=False---")
         
         # Construcción del gráfico interactivo dinámico con Plotly
         st.subheader("🛒 Distribución de Ingresos por Tipo de Producto")
